@@ -1,7 +1,9 @@
 it("Validar o método GET do endpoint /books/{id}", () => {
-  cy.request("/books/1").then(response => {
+  cy.request("/books/1").then((response) => {
     expect(response.status).to.eql(200);
-    expect(response.body.url).to.include("https://www.anapioficeandfire.com/api/books/1");
+    expect(response.body.url).to.include(
+      "https://www.anapioficeandfire.com/api/books/1",
+    );
     expect(response.body.name).to.be.a("string");
     expect(response.body.isbn).to.be.a("string");
     expect(response.body.authors).to.be.an("array");
@@ -12,8 +14,12 @@ it("Validar o método GET do endpoint /books/{id}", () => {
     expect(response.body.mediaType).to.be.a("string");
     expect(response.body.released).to.be.a("string");
     expect(response.body.characters).to.be.an("array");
-    expect(response.body.characters[0]).to.include("https://www.anapioficeandfire.com/api/characters/");
+    expect(response.body.characters[0]).to.include(
+      "https://www.anapioficeandfire.com/api/characters/",
+    );
     expect(response.body.povCharacters).to.be.an("array");
-    expect(response.body.povCharacters[0]).to.include("https://www.anapioficeandfire.com/api/characters/");
-  })
-})
+    expect(response.body.povCharacters[0]).to.include(
+      "https://www.anapioficeandfire.com/api/characters/",
+    );
+  });
+});
