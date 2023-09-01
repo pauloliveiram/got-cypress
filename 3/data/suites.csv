@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 01 19:28:34 GMT 2023","Fri Sep 01 19:28:34 GMT 2023","277","","","","","Validar o método GET do endpoint /characters","Validar o método GET do endpoint /characters",""
+"passed","Fri Sep 01 19:28:44 GMT 2023","Fri Sep 01 19:28:44 GMT 2023","285","","","","","Validar o método GET do endpoint /houses/{id}","Validar o método GET do endpoint /houses/{id}",""
+"passed","Fri Sep 01 19:28:37 GMT 2023","Fri Sep 01 19:28:38 GMT 2023","329","","","","","Validar o método GET do endpoint /characters/{id}","Validar o método GET do endpoint /characters/{id}",""
+"passed","Fri Sep 01 19:28:41 GMT 2023","Fri Sep 01 19:28:41 GMT 2023","328","","","","","Validar o método GET do endpoint /houses","Validar o método GET do endpoint /houses",""
+"passed","Fri Sep 01 19:28:31 GMT 2023","Fri Sep 01 19:28:31 GMT 2023","305","","","","","Validar o método GET do endpoint /books/{id}","Validar o método GET do endpoint /books/{id}",""
+"passed","Fri Sep 01 19:28:26 GMT 2023","Fri Sep 01 19:28:28 GMT 2023","1946","","","","","Validar o método GET do endpoint /books","Validar o método GET do endpoint /books",""
