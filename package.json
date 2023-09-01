@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*",
+    "tests": "cypress run —-env allure=true --reporter mocha-allure-reporter",
+    "allure-report": "allure generate --clean && allure open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.0.0"
+    "@shelex/cypress-allure-plugin": "^2.40.0",
+    "cypress": "^13.0.0",
+    "mocha-allure-reporter": "^1.4.0"
   }
 }

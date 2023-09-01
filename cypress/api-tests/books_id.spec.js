@@ -1,7 +1,7 @@
 it("Validar o método GET do endpoint /books/{id}", () => {
   cy.request("/books/1").then(response => {
     expect(response.status).to.eql(200);
-    expect(response.body.url).to.include("https://www.anapioficeandfire.com/api/books/");
+    expect(response.body.url).to.include("https://www.anapioficeandfire.com/api/books/1");
     expect(response.body.name).to.be.a("string");
     expect(response.body.isbn).to.be.a("string");
     expect(response.body.authors).to.be.an("array");
